@@ -1,6 +1,11 @@
 class Game:
     def __init__(self):
-        self.score = 0
+        self.rolls = []
 
     def roll(self, pins_hit: int) -> None:
-        self.score += pins_hit
+        if len(self.rolls) < 20:
+            self.rolls.append(pins_hit)
+
+    @property
+    def score(self) -> int:
+        return sum(self.rolls)
