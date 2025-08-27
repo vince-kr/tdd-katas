@@ -27,7 +27,7 @@ The argument is the number of pins knocked down.
 
 ## Test list
 
-- [ ] A player's score is the sum of all normal rolls (no spares/strikes)
+- [x] A player's score is the sum of all normal rolls (no spares/strikes)
 - [ ] A player cannot roll after a game finishes
 - [ ] After a spare, the player's next roll should count double
 - [ ] After a strike, the frame should end and the player's next two rolls should count double
