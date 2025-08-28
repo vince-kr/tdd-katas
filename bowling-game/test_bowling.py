@@ -29,4 +29,12 @@ def test_after_a_spare_count_next_roll_double(game):
     game.roll(6)
     game.roll(4)  # spare
     game.roll(3)  # counts double
-    assert game.score() == 16
+    game.roll(8)  # does not count double
+    assert game.score() == 24
+
+def test_after_a_strike_count_next_two_rolls_double(game):
+    game.roll(10)  # strike
+    game.roll(4)  # should count double
+    game.roll(3)  # also counts double
+    game.roll(8)  # should not count double
+    assert game.score() == 32
