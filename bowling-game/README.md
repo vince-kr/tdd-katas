@@ -29,7 +29,9 @@ The argument is the number of pins knocked down.
 
 - [x] A player's score is the sum of all normal rolls (no spares/strikes)
 - [x] A player cannot roll after a game finishes
-- [ ] After a spare, the player's next roll should count double
-- [ ] After a strike, the frame should end and the player's next two rolls should count double
+- [x] After a spare, the player's next roll should count double
+- [ ] After a strike, the frame should end and the player's next two rolls 
+should count double
 - [x] After ten frames the game should end
 - [x] A strike should end the frame after one roll
+- [ ] If a spare or strike happens in the last frame, make 1 or 2 extra rolls

@@ -25,10 +25,8 @@ def test_after_a_strike_frame_should_end(game):
     game.roll(6)  # this should be ignored
     assert game.score() == 10
 
-"""
 def test_after_a_spare_count_next_roll_double(game):
     game.roll(6)
     game.roll(4)  # spare
     game.roll(3)  # counts double
     assert game.score() == 16
-"""
